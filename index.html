@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstr
+ap.min.css" rel="stylesheet">
+    <style>
+        .cor-c{
+        background: rgb(211, 241, 247);
+        font-family: 'Courier New', Courier, monospace;
+        }
+
+        .cor-e{
+        background: rgb(242, 248, 150);
+        font-family: 'Courier New', Courier, monospace;
+        }
+        .doces {
+            font-style: italic;
+            background-image: url(doces\ tematicos\ epocas.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(doces\ tematicos\ epocas.jpg);
+            background-size: cover;
+        }
+
+        .encontro {
+            font-style: italic;
+            background-image: url(encontro2.png);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(encontro2.png);
+            background-size: cover;
+        }
+
+        .frente {
+            font-style: italic;
+            background-image: url(encontro2.png);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(loja.png);
+            background-size: cover;
+        }
+
+        .info {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 45px;
+        }
+
+        .info2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+
+        }
+        .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        border: 2px solid #ffc107; 
+        }
+
+        .font {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(226, 14, 14);
+        }
+        .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 8px;
+        }
+        .texto {
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-family: 'Times New Roman', Times, serif ; ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Snoopy's Coffe <img src="logo.png" alt="" height="25px" width="40px"></a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto" style="font-size: 22px;">
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel -->
+    <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="bg-dark text-white text-center p-5 doces" style="height: 550px;">
+                    <h1 class="display-1"><br><br></h1>
+                    <h2>Doces temáticos da época</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bg-secondary text-white text-center p-5 encontro" style="height: 550px;">
+                    <h1 class="display-1"><br><br></h1>
+                    <h2>Encontre os personagens aos sábados</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bg-success text-white text-center p-5 frente" style="height: 550px;">
+                    <h1 class="display-1"><br><br></h1>
+                    <h2>Um cantinho cheio de charme 🐾</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#carrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 info" style="text-shadow:2px 2px 6px rgb(128, 128, 125)">Sobre Nós</h2>
+            <div class="row">
+                <div class="col-md-6 info2">
+                    <br><br>
+                    <p>Fundado em 2024, nosso espaço nasceu com a proposta de oferecer momentos especiais em um ambiente
+                        acolhedor e cheio de charme,
+                        inspirado no universo do Snoopy.
+                    <p>Nosso objetivo é transformar pequenos momentos em grandes memórias, trazendo alegria,
+                        conforto e um sorriso no rosto de cada cliente que passa por aqui.</p>
+                    <p> Venha fazer parte da nossa história!💛</p>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <div class="bg-warning p-4 text-center rounded" style="width: 600px;"><img src="lojafrente.png" alt=""style="width: 550px; height: 400px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio" class="py-5 cor-c">
+    <div class="container" >
+       <h2 class="text-center mb-4" style="text-shadow:2px 2px 6px rgb(122, 122, 119)" >Nosso Cardápio</h2>
+        <div class="row">
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="bg-dark text-center p-3">
+                        <img src="milkshake.png" class="img-fluid" alt="" width="300px">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font ">Milkshake</h5>
+                        <p class="card-text texto">Sabores Diversos</p>
+                        <span class="preco">R$ 16,90</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="bg-dark text-center p-4 position-relative">
+                        <img src="bolos.jpg" class="img-fluid" alt="" width="300px" height="400px">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font">Fatias de bolo</h5>
+                        <p class="card-text texto">Massas e recheios diversificados</p>
+                        <span class="preco">R$ 15,90</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="bg-dark text-center p-4">
+                        <img src="waffles.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font">Waffles</h5>
+                        <p class="card-text texto">3 waffles personalizados</p>
+                        <span class="preco">R$ 12,90</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="bg-dark text-center p-4">
+                        <img src="cuppcake.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font">Cupcake</h5>
+                        <p class="card-text texto">Sabores surpresa</p>
+                        <span class="preco">R$ 6,90</span>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="bg-dark text-center p-4">
+                        <img src="tortadefrango.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font">Empadinha de frango</h5>
+                        <p class="card-text texto">4 unidades</p>
+                        <span class="preco">R$ 9,90</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="bg-dark text-center p-4">
+                        <img src="minipizza.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font">Mini pizza</h5>
+                        <p class="card-text texto">Vários sabores disponíveis</p>
+                        <span class="preco">R$ 9,90</span>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="bg-dark text-center p-4">
+                        <img src="esfihasalgadas.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font">Esfihas Temáticas</h5>
+                        <p class="card-text texto">Doces e salgadas</p>
+                        <span class="preco">R$ 9,90</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="bg-dark text-center p-4">
+                        <img src="cafes.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font">Cafés</h5>
+                        <p class="card-text texto">Diversas opções quentes e geladas</p>
+                        <span class="preco">R$ 9,90</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="bg-dark text-center p-4">
+                        <img src="biscoito.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font">Biscoito amanteigado</h5>
+                        <p class="card-text texto">Escolha seu personagem </p>
+                        <span class="preco">R$ 4,90</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Avaliações -->
+<section>
+    <div class="container py-5">
+        <h2 class="text-center mb-4 info" style="text-shadow:2px 2px 6px rgb(134, 134, 130)">Avaliações</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4" >
+                <div class="card h-100">
+                    <div class="card-body text-center ">
+                        <p class="card-text">"Um lugar encantador! Os doces são deliciosos e o ambiente é super aconchegante. Recomendo!"</p>
+                        <h5 class="card-title font">- Ana S.</h5>
+                    </div>          
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <p class="card-text">"Adorei a variedade do cardápio e o atendimento foi excelente. Voltarei com certeza!"</p>
+                        <h5 class="card-title font">- Carlos M.</h5>
+                    </div>                          
+                </div>          
+            </div>
+            <div class="col-md-4 mb-4"> 
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <p class="card-text">"O melhor café da cidade! O ambiente é perfeito para relaxar e os doces são de dar água na boca."</p>
+                        <h5 class="card-title font">- Mariana R.</h5>
+                    </div> 
+                </div>   
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contato -->
+    <section id="contato" class="py-5 cor-e">
+        <div class="container">
+            <h2 class="text-center mb-4" style="font-family: 'Courier New', Courier, monospace;">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-md-6 info2">
+                    <form>
+                        <div class="mb-3 ">
+                            <input type="text" class="form-control" placehold er="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placehol der="Seu e-mail">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placehold er="Sua mensagem"></textarea>
+                        </div>
+                        <button class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6 info2">
+                    <h5>📍 Onde estamos</h5>
+                    <p>Bairro: Jardim Planalto - SP</p>
+                    <h5>📞 Telefone</h5>
+                    <p>(11) 1234-5678</p>
+                    <h5>⏰ Horário</h5>
+                    <p>Seg-Sáb: 8h às 20h</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2026 Snoopy's Coffe - Todos os direitos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
